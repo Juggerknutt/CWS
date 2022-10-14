@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Modern CWS</title>
+</head>
+<body>
+	<div class="navbar">
+		<div class="container flex">
+			<h1 class="logo">Country Web Service .</h1>
+			<nav>
+				<form>
+					<input id="my-search" type="search" name="q" placeholder="Search for country..." required/>
+					<input id="search-btn" type="submit" value="Go!">
+				</form>
+				<ul>
+					<!-- <li><input id="" type="text" name="search" placeholder="Search..."></li>
+					<li><a id="search-btn">Go!</a></li> -->
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<section class="showcase">
+		<div class="container grid">
+			<div class="showcase-text">
+				<h1 onClick="window.location.reload()">Country Web Service</h1>
+				<p>Here we list a couple of countries</p>
+				<button id="show-btn" class="btn btn-outline">Show More</button>
+				<button id="hide-btn" class="btn btn-outline">Close Tab</button>
+				<div id="display-country"></div>
+				<ul id="form-result"></ul>
+				<ul id="go-to-country"></ul>
+			</div>
+			<div class="showcase-form card">
+				<h2>Add your country</h2>
+				<form class="reset-form">
+					<div class="form-control">
+						<input id="input-cou" type="text" name="country" placeholder="Country" required>
+					</div>
+					<div class="form-control">
+						<input id="input-cap" type="text" name="capitol" placeholder="Capitol" required>
+					</div>
+					<div class="form-control">
+						<input id="input-pop" type="text" name="habitants" placeholder="Habitants" required>
+					</div>
+					<div class="form-control">
+						<label for="input-dem">
+							Democrazy<input id="input-dem" type="radio" name="check">
+						</label>
+					</div>
+					<input id="submit-btn" type="submit" value="Send" class="btn btn-primary">
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="stats">
+		<div class="container">
+			<h3 class="stats-heading text-center my-1">
+				Welcome and swipe the caraousel to see our country destinations.
+			</h3>
+
+			<div class="grid grid-3 text-center my-4">
+				<div>
+					<i class="fas fa-server fa-3x"></i>
+					<button id="prev-btn" class="btn btn-outline">Prev</button>
+				</div>
+				<div>
+					<i class="fas fa-upload fa-3x"></i>
+					<ul id="unorder-list"><h1>- Swipe Zone  -</h1></ul>
+					<h3 id="counter-element"></h3>
+				</div>
+				<div>
+					<i class="fas fa-project-diagram fa-3x"></i>
+					<button id="next-btn" class="btn btn-outline">Next</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer bg-dark">
+		<div class="container grid grid-3 ">
+			<div>
+				<h1>Country Web Service .</h1>
+			</div>
+			<div>
+				<p>Copyright &copy 2022</p>
+			</div>
+			<div>
+				<p>Thanks MDN and YouTube!</p>
+			</div>
+		</div>
+	</footer>
+	<script src="app.js"></script>
+</body>
+</html>
